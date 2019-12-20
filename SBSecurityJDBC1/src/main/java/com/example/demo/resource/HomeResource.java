@@ -16,6 +16,11 @@ public class HomeResource {
 		return "from user - Access to User and Admin";
 	}
 
+	@GetMapping("/transfers/viewpayments")
+	public String viewpayments() {
+		return "from viewpayments - Access to User";
+	}
+
 	@GetMapping("/admin")
 	public String admin() {
 		return "from admin - Access to only Admin";
